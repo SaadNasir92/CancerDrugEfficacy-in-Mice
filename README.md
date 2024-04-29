@@ -28,11 +28,15 @@ Before running the analysis, ensure you have Python installed on your system. Yo
 
 1. Clone the repository to your local machine:
     ```bash
-    git clone https://github.com/SaadNasir92/DataVizStat
+    git clone https://github.com/SaadNasir92/DataVizStat.git
     ```
 2. Navigate to the root directory of the project:
     ```bash
     cd DataVizStat
+    ```
+    then 
+    ```bash
+    cd notebooks
     ```
 3. Install the required packages:
     ```bash
@@ -42,7 +46,7 @@ Before running the analysis, ensure you have Python installed on your system. Yo
     ```bash
     jupyter notebook main.ipynb
     ```
-**Note:** If you don't have Jupyter installed, you can install it via pip with `pip install notebook`
+    **Note:** If you don't have Jupyter installed, you can install it via pip with `pip install notebook`
 
 5. Open the notebook in Jupyter and run each cell sequentially.
 
