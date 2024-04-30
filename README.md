@@ -41,6 +41,7 @@ This project delves into the statistical analysis and visualization of tumor tre
 ![Scatter Plot](https://imgur.com/w7H4DwU.png)
 
 **Linear Regression on Scatter Plot**
+
 ![Linear Regression](https://imgur.com/ZBDy5GM.png)
 
 **Box Plot: Tumor Volume by Drug Regimen**
