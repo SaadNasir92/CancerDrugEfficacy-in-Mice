@@ -28,6 +28,7 @@ This project delves into the statistical analysis and visualization of tumor tre
 ## Visualizations
 
 **Bar Chart: Number of Observed Mouse Timepoints per Drug Regimen**
+
 ![Bar Chart](https://imgur.com/sMLtApO.png)
 
 **Pie Chart: Distribution of Mouse Sex**
@@ -35,9 +36,11 @@ This project delves into the statistical analysis and visualization of tumor tre
 ![Pie Chart](https://imgur.com/UadFzk9.png)
 
 **Line Graph: Tumor Volume Over Time for a Single Mouse**
+
 ![Line Graph](https://imgur.com/Qaubzya.png)
 
 **Scatter Plot: Mouse Weight Versus Average Tumor Volume**
+
 ![Scatter Plot](https://imgur.com/w7H4DwU.png)
 
 **Linear Regression on Scatter Plot**
@@ -45,9 +48,11 @@ This project delves into the statistical analysis and visualization of tumor tre
 ![Linear Regression](https://imgur.com/ZBDy5GM.png)
 
 **Box Plot: Tumor Volume by Drug Regimen**
+
 ![Box Plot](https://imgur.com/LIRjJbO.png)
 
 **Summary Table: Tumor Volume Statistics**
+
 ![Summary Table](https://imgur.com/iQPR8aM.png)
 
 ## Findings
