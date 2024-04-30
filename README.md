@@ -1,8 +1,8 @@
-# Data Analysis and Visualization Notebook
+# Comprehensive Analysis of Tumor Treatment in Mice
 
 ## Project Overview
 
-This project focuses on data analytics, visualization, and statistical analysis using Python. The primary goal was to merge, clean, and create a fresh copy of a dataset to explore various insights through visualization. The notebook includes a range of visualizations such as bar charts, pie charts, line graphs, scatter plots, and a linear regression analysis to understand the relationships within the data.
+This project delves into the statistical analysis and visualization of tumor treatment efficacy across different drug regimens in laboratory mice. Using a rich dataset, we conduct a selective cleaning process, execute statistical analysis, and visualize the results to identify trends and outliers in tumor volume changes, comparing them across various conditions.
 
 ## Technologies Used
 
@@ -11,28 +11,63 @@ This project focuses on data analytics, visualization, and statistical analysis 
 - Matplotlib: For creating visualizations.
 - SciPy: For statistical analysis, specifically linear regression.
 
-## Key Activities
+## Objectives
+- To evaluate the effectiveness of different drug regimens on tumor volume in mice.
+- To understand the relationship between the mice's weight and tumor volume under different treatment plans.
+- To assess the distribution of tumor volume data to identify outliers and overall trends.
 
-- Data review and merging from multiple sources.
-- Data cleaning to create a reliable dataset for analysis.
-- Explorative data analysis using different types of visualizations to unearth insights.
-- Performing statistical analysis using SciPy to understand data trends and predict future patterns.
-- Implementing loops and comprehensions to manipulate groupby objects and dictionaries efficiently.
+## Methods and Results
+### Data Cleaning
+- Duplicates were removed, ensuring clean and reliable data for analysis.
+- A new column was calculated to represent the maximum time point for each mouse, aiding in focused subsequent analyses.
 
-## Challenges and Solutions
+### Statistical Analysis
+- Computed summary statistics of tumor volumes, grouped by drug regimen to highlight potential differences in treatment effectiveness.
+- Used the Pearson correlation coefficient to highlight a strong correlation between one of the drug regimens and the weight of the mice.
 
-Navigating through various methods of data grouping, slicing, and visualization techniques posed a significant learning curve. A combination of Pandas and Matplotlib was used to tackle these challenges, offering multiple ways to slice data and visualize it effectively. The use of SciPy allowed for diving deeper into statistics to perform a linear regression analysis, which required careful calculation of regression lines using the slope (m) and intercept (b) derived from the data.
+## Visualizations
+
+**Bar Chart: Number of Observed Mouse Timepoints per Drug Regimen**
+![Bar Chart](https://imgur.com/sMLtApO.png)
+
+**Pie Chart: Distribution of Mouse Sex**
+
+![Pie Chart](https://imgur.com/UadFzk9.png)
+
+**Line Graph: Tumor Volume Over Time for a Single Mouse**
+![Line Graph](https://imgur.com/Qaubzya.png)
+
+**Scatter Plot: Mouse Weight Versus Average Tumor Volume**
+![Scatter Plot](https://imgur.com/w7H4DwU.png)
+
+**Linear Regression on Scatter Plot**
+![Linear Regression](https://imgur.com/ZBDy5GM.png)
+
+**Box Plot: Tumor Volume by Drug Regimen**
+![Box Plot](https://imgur.com/LIRjJbO.png)
+
+**Summary Table: Tumor Volume Statistics**
+![Summary Table](https://imgur.com/iQPR8aM.png)
+
+## Findings
+- The analysis highlighted significant variations in tumor response to different drug regimens.
+- One drug regimen `Capomulin`, in particular, showed a strong correlation between mouse weight and average tumor volume, with a Pearson correlation coefficient of 0.84. This indicates a strong positive relationship, suggesting that dosage adjustments might be necessary based on the mouse’s weight to optimize treatment efficacy.
+- The presence of an outlier in one of the drug treatments suggests potential anomalies in response or errors in data collection.
+
+## Conclusions
+
+This project not only sheds light on the potential efficacy of different drug treatments but also underscores the importance of considering physiological traits such as weight in treatment plans. The visualizations provide clear, actionable insights that can guide further research and treatment adjustments.
 
 ## Installation
 Before running the analysis, ensure you have Python installed on your system. You can then install the required libraries using `pip`. It's recommended to use a virtual environment.
 
 1. Clone the repository to your local machine:
     ```bash
-    git clone https://github.com/SaadNasir92/DataVizStat.git
+    git clone https://github.com/SaadNasir92/CancerDrugEfficacy-in-Mice
     ```
 2. Navigate to the root directory of the project:
     ```bash
-    cd DataVizStat
+    cd CancerDrugEfficacy-in-Mice
     ```
     then 
     ```bash
@@ -46,41 +81,15 @@ Before running the analysis, ensure you have Python installed on your system. Yo
     ```bash
     jupyter notebook main.ipynb
     ```
-    **Note:** If you don't have Jupyter installed, you can install it via pip with `pip install notebook`
 
-5. Open the notebook in Jupyter and run each cell sequentially.
-
-## Visualizations Included
-
-- Bar Charts
-- Pie Charts
-- Line Graphs
-- Scatter Plots with Linear Regression Analysis
+**Note:** If you don't have Jupyter installed, you can install it via pip with `pip install notebook`
 
 ## Lessons Learned
-
-Throughout the completion of this data analysis and visualization project, several valuable lessons were learned that not only enhanced my technical skills but also provided insights into the practical application of data science methodologies.
-
-- **Data Manipulation Proficiency**: Gained significant experience with Pandas for data merging, cleaning, and preparation, which are critical steps for any data analysis project.
-
-- **Visualization Techniques**: Learned to effectively use Matplotlib for generating various types of plots and charts, which enabled the translation of complex datasets into understandable visual formats.
-
-- **Statistical Analysis**: By employing SciPy for linear regression, I strengthened my understanding of statistical concepts and their use in deriving trends and making predictions from data.
-
-- **Coding Efficiency**: Enhanced my ability to write efficient Python code using loops, list comprehensions, and dictionary manipulations to work through large datasets and groupby objects.
-
-- **Problem-solving**: Developed robust problem-solving skills, particularly in overcoming challenges associated with data inconsistencies and understanding the underlying story the data was telling.
-
-- **Analytical Thinking**: Improved my analytical thinking capabilities, learning to ask the right questions and derive meaningful hypotheses that could be tested and visualized through the data.
-
-- **Scientific Approach**: Adopted a more scientific approach to data analysis by rigorously validating findings and ensuring the reproducibility of the results.
-
-*The skills and experiences gained from this project are integral to my development as a data analyst, providing a strong foundation for tackling more complex data challenges in the future.*
+- Reinforced the importance of thorough data cleaning for accurate analysis. Handling duplicates and deriving new columns can significantly impact the study's outcome.
+- Gained a deeper understanding of statistical methods, especially in interpreting Pearson's correlation coefficient in practical scenarios.
+- Improved skills in creating effective visualizations that communicate complex data in a clear and understandable manner.
+- Learned to apply linear regression in a real-world context, interpreting the slope and intercept in the framework of the study's goals.
 
 ## Future Work
-
 - Expand the dataset to include more variables for a multifaceted analysis.
 - Implement more advanced statistical models to predict trends.
-- Integrate interactive visualizations for a more dynamic data exploration experience.
-
-
